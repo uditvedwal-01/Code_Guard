@@ -1,4 +1,4 @@
-# Compiler-Based Plagiarism Detection System
+# Code_Guard: Compiler-Based Plagiarism Detection System
 
 A **deterministic, rule-based** plagiarism detection system for C source code that uses classical compiler phases: lexical analysis, syntax analysis, intermediate representation, and comparison. No AI, ML, NLP, or pretrained models are used.
 
