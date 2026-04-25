@@ -1,0 +1,19 @@
+{
+  "name": "compiler-plagiarism-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vanilla JS frontend + API wrapper for C++ plagiarism checker",
+  "main": "server.js",
+  "scripts": {
+    "build:detector": "node scripts/build-detector.js",
+    "dev": "npm run build:detector && node server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "formidable": "^3.5.2"
+  }
+}
