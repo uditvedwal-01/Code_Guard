@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Plagiarism Detector</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>C Plagiarism Detector</h1>
+        <p class="subtitle">
+          Upload two C source files and compare them using your compiler-based detection engine.
+        </p>
+
+        <form id="uploadForm" class="form">
+          <label class="file-input">
+            <span>Source File 1 (.c)</span>
+            <input id="file1" name="file1" type="file" accept=".c,.h,.txt" required />
+          </label>
+
+          <label class="file-input">
+            <span>Source File 2 (.c)</span>
+            <input id="file2" name="file2" type="file" accept=".c,.h,.txt" required />
+          </label>
+
+          <button id="submitBtn" type="submit">Detect Plagiarism</button>
+        </form>
+
+        <div id="status" class="status" aria-live="polite"></div>
+
+        <section id="result" class="result hidden">
+          <h2>Result</h2>
+          <div class="result-grid">
+            <div><span>Total Tokens File1</span><strong id="t1">-</strong></div>
+            <div><span>Total Tokens File2</span><strong id="t2">-</strong></div>
+            <div><span>Matched Tokens</span><strong id="matched">-</strong></div>
+            <div><span>Similarity</span><strong id="sim">-</strong></div>
+            <div><span>Plagiarism Level</span><strong id="level">-</strong></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
