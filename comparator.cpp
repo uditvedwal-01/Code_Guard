@@ -36,7 +36,7 @@ ComparisonResult compareTokenSequences(
         r.similarityPercent = (2.0 * r.matched / total) * 100.0;
     }
 
-    if (r.similarityPercent <= 30.0) {
+    if (r.similarityPercent <= 50.0) {
         r.level = "Low";
     } else if (r.similarityPercent <= 70.0) {
         r.level = "Medium";
